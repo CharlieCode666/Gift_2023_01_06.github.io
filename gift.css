@@ -1,0 +1,220 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #d9d9d9;
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    background: #6666ff;
+}
+
+.h01{
+    position: relative;
+    font-size: 4vw;
+    color: #151320;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+    white-space : nowrap;
+}
+
+.h01::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #ffff00;
+    -webkit-text-stroke: 0vw #383d52;
+    /* border-right: 2px solid #ffff00; */
+    overflow: hidden;
+
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+.lol{
+    position: relative;
+    animation: lol 6s linear infinite;
+}
+
+@keyframes lol{
+    0%,100%{
+        transform: scale(1);
+    }
+    70%,90%{
+        transform: scale(1.2);
+    }
+}
+
+
+.h02{
+    color: #ff0066;
+}
+
+/* === 剪刀石頭布 === */
+
+/* 說明 and 命名 */
+.b1{
+    background: #fff0b3;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+}
+
+.box2{
+    background: #99ccff;
+    width: 50px;
+
+    position: relative;
+    left: 10%;
+}
+
+.name{
+    color: aliceblue;
+}
+
+/* 電腦出拳畫面 */
+.b2{
+    background: #ff4d94;
+
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5{
+    background: #d9d9d9;
+    
+    width: 90px;
+    height: 90px;
+}
+
+#AIimg{
+    width: 100%;
+}
+
+/* 比分 */
+.b3{
+    background: #fff0b3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+}
+
+.box3{
+    position: relative;
+    left: -10%;
+
+    background: #fff0b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AIname{
+    color: #ff0000;
+}
+
+#AIscore{
+    color: #ff5050;
+}
+
+.box4{
+    position: relative;
+    left: 10%;
+
+    background: #fff0b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Playername{
+    color: #0000ff;
+}
+
+#Playerscore{
+    color: #6600ff;
+}
+
+/* 玩家出拳畫面 */
+.b4{
+    background: #33ccff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 200px;
+}
+
+.box6{
+    background: #d9d9d9;
+    
+    width: 90px;
+    height: 90px;
+}
+
+#Playerimg{
+    width: 100%;
+}
+
+/* 出拳表 */
+.b5{
+    background: pink;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+}
+
+#Scissors{
+    position: relative;
+    left: -10%;
+}
+
+#Stone{
+    position: relative;
+    left: 0%;
+}
+
+#cloth{
+    position: relative;
+    left: 10%;
+}
